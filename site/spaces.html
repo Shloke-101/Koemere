@@ -149,6 +149,24 @@
   <section class="spaces">
     <div class="wrap">
       
+      <!-- Glassmorphic Space Filter Switcher -->
+      <div class="spaces-interactive-bar reveal">
+        <div class="space-tab-switch" role="tablist" aria-label="Spaces View Switcher">
+          <button class="space-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="18" rx="1.5"/><rect x="14" y="3" width="7" height="18" rx="1.5"/></svg>
+            <span>Compare Both Spaces</span>
+          </button>
+          <button class="space-tab-btn" data-filter="group" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Group Space</span>
+          </button>
+          <button class="space-tab-btn" data-filter="public" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Public Venting</span>
+          </button>
+        </div>
+      </div>
+
       <!-- Detailed Cards for Both Spaces -->
       <div class="spaces-grid">
         <div class="space a reveal">

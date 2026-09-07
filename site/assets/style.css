@@ -1211,6 +1211,92 @@ blockquote {
   position: relative;
 }
 
+/* Glassmorphic Space Filter Switcher */
+.spaces-interactive-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 52px;
+}
+
+.space-tab-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(243, 231, 214, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(203, 161, 132, 0.45);
+  border-radius: 100px;
+  padding: 6px;
+  box-shadow: 0 14px 38px -12px rgba(46, 36, 28, 0.12),
+              inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.space-tab-btn {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  color: var(--cocoa);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 10px 22px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.35s var(--ease-out-expo);
+  position: relative;
+  user-select: none;
+}
+
+.space-tab-btn .tab-icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  transition: transform 0.35s var(--ease-spring);
+}
+
+.space-tab-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(203, 161, 132, 0.35);
+  color: var(--charcoal);
+  transform: translateY(-1px);
+}
+
+.space-tab-btn:hover .tab-icon {
+  transform: scale(1.15);
+}
+
+.space-tab-btn.active {
+  background: linear-gradient(135deg, #4E3A2E 0%, #2E241C 100%);
+  color: var(--cream);
+  border-color: rgba(203, 161, 132, 0.4);
+  box-shadow: 0 8px 24px -6px rgba(46, 36, 28, 0.35),
+              inset 0 1px 1px rgba(255, 255, 255, 0.22);
+  transform: scale(1.02);
+}
+
+.space-tab-btn.active .tab-icon {
+  color: var(--rose);
+}
+
+@media (max-width: 640px) {
+  .space-tab-switch {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+    padding: 8px;
+  }
+  .space-tab-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+  }
+}
+
 .spaces-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

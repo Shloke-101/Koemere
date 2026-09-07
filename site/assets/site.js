@@ -340,48 +340,53 @@
     const spacesGrid = spacesSection.querySelector('.spaces-grid');
     if (!spacesGrid) return;
 
-    if (!spacesSection.querySelector('.spaces-interactive-bar')) {
-      const bar = document.createElement('div');
-      bar.className = 'spaces-interactive-bar reveal';
-      bar.innerHTML = `
-        <div class="space-tab-switch" role="tablist" aria-label="Spaces View Switcher">
-          <button class="space-tab-btn active" data-filter="all" role="tab" aria-selected="true">Compare Both Spaces</button>
-          <button class="space-tab-btn" data-filter="group" role="tab" aria-selected="false">Group Space</button>
-          <button class="space-tab-btn" data-filter="public" role="tab" aria-selected="false">Public Venting</button>
-        </div>
-      `;
-      spacesSection.querySelector('.wrap').insertBefore(bar, spacesGrid);
+    const tabBtns = spacesSection.querySelectorAll('.space-tab-btn');
+    const spaceA = spacesGrid.querySelector('.space.a');
+    const spaceB = spacesGrid.querySelector('.space.b');
 
-      const tabBtns = bar.querySelectorAll('.space-tab-btn');
-      const spaceA = spacesGrid.querySelector('.space.a');
-      const spaceB = spacesGrid.querySelector('.space.b');
+    if (!tabBtns.length) return;
 
-      tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          tabBtns.forEach(b => {
-            b.classList.remove('active');
-            b.setAttribute('aria-selected', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-selected', 'true');
-
-          const filter = btn.dataset.filter;
-          if (filter === 'all') {
-            if (spaceA) spaceA.style.display = 'flex';
-            if (spaceB) spaceB.style.display = 'flex';
-            spacesGrid.style.gridTemplateColumns = window.innerWidth > 860 ? '1fr 1fr' : '1fr';
-          } else if (filter === 'group') {
-            if (spaceA) spaceA.style.display = 'flex';
-            if (spaceB) spaceB.style.display = 'none';
-            spacesGrid.style.gridTemplateColumns = '1fr';
-          } else if (filter === 'public') {
-            if (spaceA) spaceA.style.display = 'none';
-            if (spaceB) spaceB.style.display = 'flex';
-            spacesGrid.style.gridTemplateColumns = '1fr';
-          }
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
         });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const filter = btn.dataset.filter;
+        if (filter === 'all') {
+          if (spaceA) {
+            spaceA.style.display = 'flex';
+            spaceA.style.opacity = '1';
+          }
+          if (spaceB) {
+            spaceB.style.display = 'flex';
+            spaceB.style.opacity = '1';
+          }
+          spacesGrid.style.gridTemplateColumns = window.innerWidth > 860 ? '1fr 1fr' : '1fr';
+        } else if (filter === 'group') {
+          if (spaceA) {
+            spaceA.style.display = 'flex';
+            spaceA.style.opacity = '1';
+          }
+          if (spaceB) {
+            spaceB.style.display = 'none';
+          }
+          spacesGrid.style.gridTemplateColumns = '1fr';
+        } else if (filter === 'public') {
+          if (spaceA) {
+            spaceA.style.display = 'none';
+          }
+          if (spaceB) {
+            spaceB.style.display = 'flex';
+            spaceB.style.opacity = '1';
+          }
+          spacesGrid.style.gridTemplateColumns = '1fr';
+        }
       });
-    }
+    });
   }
 
   /* ==========================================================================
