@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: koemere-site
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./site
+    pullRequestPreviewsEnabled: false
