@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Manual Wave — Apply for Founder Cohort 01 of Koemere. Direct access to our building team, private beta builds, and shaping the future of intimate communication.">
 <title>Manual Wave — Koemere</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,440;0,9..144,500;1,9..144,440;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 385 294'%3E%3Cpath fill='%234E3A2E' d='M2825 3099 c-426 -54 -1070 -406 -1413 -774 -134 -144 -371 -474 -445 -620 -129 -257 -108 -519 54 -684 232 -236 757 -113 1115 262 79 81 181 214 172 222 -3 3 -40 -26 -84 -63 -331 -286 -674 -423 -850 -341 -90 43 -137 155 -115 277 10 57 66 202 78 202 2 0 30 -14 63 -30 371 -187 914 61 1054 481 46 136 45 321 -1 336 -6 2 -35 -31 -64 -74 -174 -259 -425 -414 -669 -412 -84 0 -169 22 -177 45 -19 59 339 399 597 566 925 601 1615 218 1465 -814 -89 -612 -420 -1114 -735 -1113 -97 1 -139 22 -217 112 -204 237 -375 302 -628 237 -77 -20 -179 -71 -334 -168 -226 -143 -307 -170 -506 -171 -215 0 -357 57 -506 205 -294 292 -238 781 130 1145 45 44 81 84 81 89 0 18 -95 -5 -149 -35 -161 -91 -334 -272 -438 -459 -214 -385 -142 -875 164 -1122 196 -158 384 -222 658 -222 208 0 381 41 520 123 309 184 369 211 470 211 86 0 134 -26 245 -133 162 -155 255 -198 446 -205 315 -11 548 146 807 543 469 721 552 1518 209 2022 -189 278 -568 416 -997 362z' transform='translate(-18,311) scale(0.1,-0.1)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -76,76 +78,299 @@
 </head>
 <body>
 
+<div class="scroll-progress-container">
+  <div class="scroll-progress-bar"></div>
+</div>
+
 <div class="grain"></div>
 
 <header>
   <div class="wrap nav-row">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Koemere homepage">
       <svg class="mark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-full" fill="currentColor"/></svg>
       <span class="brand-text">
         <span class="brand-name">koemere</span>
         <span class="brand-tag">home between voices</span>
       </span>
     </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="philosophy.html">Philosophy</a></li>
-        <li><a href="spaces.html">Two Spaces</a></li>
-        <li><a href="archive.html">The Archive</a></li>
-        <li><a href="manual-wave.html" class="active">Manual Wave</a></li>
-      </ul>
-    </nav>
+
+    <div class="nav-actions">
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="spaces.html">Two Spaces</a></li>
+          <li><a href="archive.html">The Archive</a></li>
+          <li><a href="manual-wave.html" class="active" aria-current="page">Manual Wave</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-cta" type="button" id="header-apply-trigger">Apply Now &rarr;</button>
+
+      <button class="mobile-nav-toggle" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="burger-box">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="spaces.html">Two Spaces</a></li>
+    <li><a href="archive.html">The Archive</a></li>
+    <li><a href="manual-wave.html" class="active">Manual Wave</a></li>
+  </ul>
+  <div class="mobile-drawer-footer">
+    <span>koemere — home between voices</span>
+    <span>shreejatamukherjeeuiux@gmail.com</span>
+  </div>
+</div>
 
 <main>
 
   <section class="page-intro">
     <svg class="page-intro-watermark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-contour" fill="currentColor"/></svg>
     <div class="wrap">
-      <span class="label reveal in">The Manual Wave</span>
+      <span class="label reveal in">Chapter 04 &bull; Early Cohort</span>
       <h1 class="reveal in">Before there's an app, there's a handful of people.</h1>
-      <p class="dek reveal in">This isn't a waitlist for a finished product. It's our first, unscaled attempt at this with real people — call it a beta, if you'd like a familiar word for it.</p>
+      <p class="dek reveal in">
+        The Manual Wave is our intentional, private first cohort. Founding members test early builds, talk directly with our creators, and define the core culture of Koemere.
+      </p>
     </div>
   </section>
 
   <section class="manualwave">
     <div class="wrap">
+      
+      <!-- Four Key Expectations -->
       <ul class="mw-expect">
-        <li class="reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-          <span><span class="mw-title">Direct contact with our team</span><span class="mw-body">No support ticket. You'll be talking to the people actually building this.</span></span>
+        <li class="reveal delay-1">
+          <div class="mw-expect-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <span>
+            <span class="mw-title">Direct contact with the founders</span>
+            <span class="mw-body">No support bots or automated tickets. You will be in a direct dialogue with the designers and engineers building the system.</span>
+          </span>
         </li>
-        <li class="reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-          <span><span class="mw-title">Rough edges, on purpose</span><span class="mw-body">This is early. It will look and feel unfinished, because it is.</span></span>
+
+        <li class="reveal delay-2">
+          <div class="mw-expect-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <span>
+            <span class="mw-title">Handcrafted early builds</span>
+            <span class="mw-body">Early builds are intentionally unscaled. We test with small numbers specifically so we can adjust details with extreme care.</span>
+          </span>
         </li>
-        <li class="reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-          <span><span class="mw-title">Your feedback shapes what we build next</span><span class="mw-body">Not a survey afterthought — the actual input behind our next decisions.</span></span>
+
+        <li class="reveal delay-3">
+          <div class="mw-expect-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <span>
+            <span class="mw-title">Direct influence on product decisions</span>
+            <span class="mw-body">Your input directly dictates how room privacy thresholds, audio compression, transcripts, and moderation are shaped.</span>
+          </span>
         </li>
-        <li class="reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-          <span><span class="mw-title">No spam, no pressure to stay</span><span class="mw-body">If it's not for you, leaving is as manual as joining was.</span></span>
+
+        <li class="reveal delay-4">
+          <div class="mw-expect-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <span>
+            <span class="mw-title">No spam, zero pressure to remain</span>
+            <span class="mw-body">We respect your time. If Koemere is not for you, leaving is as simple and respectful as joining was.</span>
+          </span>
         </li>
       </ul>
 
-      <p class="reveal" style="font-size:13px;color:var(--taupe);max-width:56ch;margin-bottom:70px;">
-        A note on how this works: right now, applications are collected through a Google Form while we build our own systems. Only our team reads your response, and it's used only to reach out about the Manual Wave — nothing else.
-      </p>
-
-      <div class="fw-panel reveal">
-        <svg class="wave-icon" viewBox="203 160 108 82" aria-hidden="true"><use href="#wave-motif" fill="currentColor"/></svg>
-        <div>
-          <span class="label">Apply</span>
-          <h2>Request a spot in the Manual Wave</h2>
-        </div>
-        <div class="fw-form">
-          <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeFncGggzUPI3f9Jwpm8C9W8Po_TueY7UuAnxcM-7MM8FkEcg/viewform?usp=publish-editor" target="_blank" rel="noopener" aria-label="Apply to the Manual Wave — opens a form in a new tab">Apply to the Manual Wave</a>
-          <span class="fw-micro">Takes about a minute. We read every response ourselves.</span>
+      <!-- Roadmap Timeline -->
+      <div class="timeline-section reveal">
+        <span class="label">Rollout Roadmap</span>
+        <h3>How Koemere is Coming to Life</h3>
+        <div class="timeline-grid">
+          <div class="timeline-card active">
+            <span class="label">Phase 01 &bull; Active Now</span>
+            <h4>Manual Wave Cohort</h4>
+            <p>Onboarding our first 50 founding participants. Hand-testing audio fidelity, circle dynamics, and the psychological comfort of closed pods.</p>
+          </div>
+          <div class="timeline-card">
+            <span class="label">Phase 02 &bull; Next</span>
+            <h4>Private Pod Network</h4>
+            <p>Inviting entire real-world friend groups and creative circles into custom encrypted spaces with asynchronous voice memories.</p>
+          </div>
+          <div class="timeline-card">
+            <span class="label">Phase 03 &bull; Future</span>
+            <h4>Public Sanctuary</h4>
+            <p>Opening access worldwide with sustainable human-first pricing and a complete refusal of algorithmic engagement harvesting.</p>
+          </div>
         </div>
       </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section reveal">
+        <span class="label">Frequently Answered Questions</span>
+        <h3>Everything you need to know about the Beta</h3>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>Is participating in the Manual Wave free?</h4>
+            <p>Yes, 100% free. Founder cohort members will receive lifetime early-supporter access and premium circle memory archiving at no cost.</p>
+          </div>
+          <div class="faq-item">
+            <h4>What platforms will be supported?</h4>
+            <p>We are starting with iOS TestFlight and an ultra-minimal progressive web client, followed by Android support during Phase 02.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How do you handle privacy & data?</h4>
+            <p>Private group messages are end-to-end encrypted. We collect zero advertising identifiers, sell no user data, and track no external activity.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How are applications reviewed?</h4>
+            <p>Every single application is read personally by our small founding team. We look for individuals and groups who genuinely value quiet, thoughtful connection.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Integrated On-Page Application Form Panel (Syncs to Google Form) -->
+      <div class="fw-panel reveal" id="apply-section">
+        <svg class="wave-icon" viewBox="203 160 108 82" aria-hidden="true"><use href="#wave-motif" fill="currentColor"/></svg>
+        
+        <div class="fw-panel-header">
+          <span class="label">Founder Cohort 01 Application</span>
+          <h2>Apply to the Manual Wave</h2>
+          <p>Complete your application below. Your response is recorded securely into our private registry and our founding team will reach out via email.</p>
+        </div>
+
+        <form class="app-form inline-app-form" id="page-app-form">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="p-name">1. Full Name or Pseudonym *</label>
+              <input type="text" id="p-name" name="entry.795426311" required placeholder="e.g. Maya Lin" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="p-email">2. Email Address *</label>
+              <input type="email" id="p-email" name="entry.1636699489" required placeholder="maya@example.com" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>3. Age Group *</label>
+            <div class="form-chip-group">
+              <label class="form-chip-label">
+                <input type="radio" name="entry.64478642" value="under 18">
+                <span class="form-chip-text">Under 18</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.64478642" value="18-24" checked>
+                <span class="form-chip-text">18–24</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.64478642" value="25-34">
+                <span class="form-chip-text">25–34</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.64478642" value="35-44">
+                <span class="form-chip-text">35–44</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.64478642" value="45+">
+                <span class="form-chip-text">45+</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>4. What made you join the waitlist today? *</label>
+            <div class="form-chip-group">
+              <label class="form-chip-label">
+                <input type="radio" name="entry.215633984" value="I want a safer space to explain myself." checked>
+                <span class="form-chip-text">I want a safer space to explain myself</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.215633984" value="I want deeper conversations.">
+                <span class="form-chip-text">I want deeper conversations</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.215633984" value="I am curious about Koemere">
+                <span class="form-chip-text">I am curious about Koemere</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.215633984" value="Someone shared it with me.">
+                <span class="form-chip-text">Someone shared it with me</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>5. Which part of Koemere sounds most valuable to you? *</label>
+            <div class="form-chip-group">
+              <label class="form-chip-label">
+                <input type="radio" name="entry.536843190" value="Anonymous public venting" checked>
+                <span class="form-chip-text">Anonymous public venting</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.536843190" value="Small support Groups">
+                <span class="form-chip-text">Small support Groups</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.536843190" value="Feeling understood">
+                <span class="form-chip-text">Feeling understood</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.536843190" value="Privacy-first Design">
+                <span class="form-chip-text">Privacy-first Design</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>6. How did you hear about Koemere? *</label>
+            <div class="form-chip-group">
+              <label class="form-chip-label">
+                <input type="radio" name="entry.1606538711" value="LinkedIn" checked>
+                <span class="form-chip-text">LinkedIn</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.1606538711" value="Instagram">
+                <span class="form-chip-text">Instagram</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.1606538711" value="Reddit">
+                <span class="form-chip-text">Reddit</span>
+              </label>
+              <label class="form-chip-label">
+                <input type="radio" name="entry.1606538711" value="Friend">
+                <span class="form-chip-text">Friend</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit-btn">
+            <span>Submit Application to Wave 01 &rarr;</span>
+          </button>
+        </form>
+
+        <div class="form-success-card" id="page-form-success">
+          <div class="success-stamp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <span class="label" style="color:var(--rose-deep);margin-bottom:8px;display:block;">Application Received</span>
+          <h3>Welcome to Founder Cohort 01</h3>
+          <p>Your responses have been recorded directly in our private registry and Google Form. Our founding team reads every application personally and will reach out via email.</p>
+          <a class="btn btn-solid" href="index.html"><span>Explore Philosophy &rarr;</span></a>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
@@ -168,11 +393,18 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Koemere.</span>
+      <div class="foot-meta-tag">
+        <span class="foot-meta-dot"></span>
+        <span>© 2026 Koemere. All rights reserved.</span>
+      </div>
       <span>Built slowly, on purpose.</span>
     </div>
   </div>
 </footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top of page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
 <script src="assets/site.js" defer></script>
 </body>

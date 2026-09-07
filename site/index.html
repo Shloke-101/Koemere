@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Koemere is an intimate communication sanctuary built for authentic conversations between trusted friends and cathartic private venting — free from algorithms, vanity metrics, and crowds.">
 <title>Koemere — Home Between Voices</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,440;0,9..144,500;1,9..144,440;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 385 294'%3E%3Cpath fill='%234E3A2E' d='M2825 3099 c-426 -54 -1070 -406 -1413 -774 -134 -144 -371 -474 -445 -620 -129 -257 -108 -519 54 -684 232 -236 757 -113 1115 262 79 81 181 214 172 222 -3 3 -40 -26 -84 -63 -331 -286 -674 -423 -850 -341 -90 43 -137 155 -115 277 10 57 66 202 78 202 2 0 30 -14 63 -30 371 -187 914 61 1054 481 46 136 45 321 -1 336 -6 2 -35 -31 -64 -74 -174 -259 -425 -414 -669 -412 -84 0 -169 22 -177 45 -19 59 339 399 597 566 925 601 1615 218 1465 -814 -89 -612 -420 -1114 -735 -1113 -97 1 -139 22 -217 112 -204 237 -375 302 -628 237 -77 -20 -179 -71 -334 -168 -226 -143 -307 -170 -506 -171 -215 0 -357 57 -506 205 -294 292 -238 781 130 1145 45 44 81 84 81 89 0 18 -95 -5 -149 -35 -161 -91 -334 -272 -438 -459 -214 -385 -142 -875 164 -1122 196 -158 384 -222 658 -222 208 0 381 41 520 123 309 184 369 211 470 211 86 0 134 -26 245 -133 162 -155 255 -198 446 -205 315 -11 548 146 807 543 469 721 552 1518 209 2022 -189 278 -568 416 -997 362z' transform='translate(-18,311) scale(0.1,-0.1)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -76,72 +78,169 @@
 </head>
 <body>
 
+<div class="scroll-progress-container">
+  <div class="scroll-progress-bar"></div>
+</div>
+
 <div class="grain"></div>
 
 <header>
   <div class="wrap nav-row">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Koemere homepage">
       <svg class="mark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-full" fill="currentColor"/></svg>
       <span class="brand-text">
         <span class="brand-name">koemere</span>
         <span class="brand-tag">home between voices</span>
       </span>
     </a>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="philosophy.html">Philosophy</a></li>
-        <li><a href="spaces.html">Two Spaces</a></li>
-        <li><a href="archive.html">The Archive</a></li>
-        <li><a href="manual-wave.html">Manual Wave</a></li>
-      </ul>
-    </nav>
+
+    <div class="nav-actions">
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="spaces.html">Two Spaces</a></li>
+          <li><a href="archive.html">The Archive</a></li>
+          <li><a href="manual-wave.html">Manual Wave</a></li>
+        </ul>
+      </nav>
+
+      <a class="nav-cta" href="manual-wave.html">Join Wave 01 &rarr;</a>
+
+      <button class="mobile-nav-toggle" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="burger-box">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+    </div>
   </div>
 </header>
 
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="spaces.html">Two Spaces</a></li>
+    <li><a href="archive.html">The Archive</a></li>
+    <li><a href="manual-wave.html">Manual Wave</a></li>
+  </ul>
+  <div class="mobile-drawer-footer">
+    <span>koemere — home between voices</span>
+    <span>shreejatamukherjeeuiux@gmail.com</span>
+  </div>
+</div>
+
 <main>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-watermark-wrap">
-      <svg class="hero-watermark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-contour" fill="currentColor"/></svg>
+    <div class="hero-watermark-wrap" aria-hidden="true">
+      <svg class="hero-watermark" viewBox="0 0 385.170327 293.858106"><use href="#mark-contour" fill="currentColor"/></svg>
     </div>
     <div class="wrap">
       <div class="hero-content reveal in">
-        <span class="badge"><span class="badge-dot"></span>An app in the making</span>
+        <span class="badge"><span class="badge-dot"></span>An intimate communication sanctuary</span>
         <h1>Some conversations don't need an audience. <em>They need somewhere safe enough to happen.</em></h1>
-        <p class="hero-sub">Koemere is a quieter kind of space, still being built — for the conversations you'd rather have with care than with a crowd.</p>
+        <p class="hero-sub">
+          Koemere is a private communication platform crafted for real human depth. We replace algorithmic feeds, follower counts, and broadcast spectacle with quiet, closed audio-first spaces and cathartic venting rooms where you can speak honestly without performing.
+        </p>
         <div class="cta-row">
-          <a class="btn" href="manual-wave.html">Join the Manual Wave</a>
+          <a class="btn btn-solid" href="manual-wave.html"><span>Join the Manual Wave Cohort</span></a>
+          <a class="btn btn-secondary" href="philosophy.html"><span>Explore Our Philosophy</span></a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Business Mission & Pillars Section -->
+  <section class="mission-section">
+    <div class="wrap">
+      <div class="mission-grid">
+        <div class="mission-lead reveal">
+          <span class="label">The Core Problem</span>
+          <h2>The modern internet turned every conversation into <em>a performance for strangers.</em></h2>
+          <p>
+            When every thought is broadcast to a feed, indexed for engagement, and measured in reactions, human vulnerability disappears. People stop saying what is true and start saying what performs.
+          </p>
+          <p style="margin-top:14px;">
+            Koemere is built on an architectural counter-philosophy: <strong>software designed for the room, not the crowd.</strong> We give you the digital equivalent of sitting around a kitchen table late at night with people who genuinely know you.
+          </p>
+        </div>
+
+        <div class="mission-pillars reveal delay-2">
+          <div class="pillar-card">
+            <span class="label">01 / Intimacy</span>
+            <h4>Closed Pod Architecture</h4>
+            <p>Conversations happen in tight, invite-only circles of 3 to 12 people. No public follower graphs or strangers passing through.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="label">02 / Voice First</span>
+            <h4>Nuanced Audio Notes</h4>
+            <p>Tone, cadence, pauses, and breath carry emotional truth that flat text strips away. Hear the people you care about as they are.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="label">03 / Ephemerality</span>
+            <h4>Cathartic Venting Stream</h4>
+            <p>A separate room for the heavy thoughts you need to release into the world without them attaching permanently to your identity.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="label">04 / Dignity</span>
+            <h4>Zero Surveillance Ads</h4>
+            <p>No behavioral profiling, no dopamine notification tricks, and no algorithmic feeds engineered to keep you hooked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four Chapters Explore Grid -->
   <section class="explore">
     <div class="wrap">
       <div class="explore-head reveal">
-        <span class="label">Find your way in</span>
+        <div>
+          <span class="label">Explore The Brochure</span>
+          <h2 style="font-size:28px;color:var(--charcoal);margin-top:6px;">How Koemere is structured</h2>
+        </div>
+        <span style="font-size:13px;color:var(--taupe);font-style:italic;">Four chapters into our vision</span>
       </div>
       <div class="explore-grid">
-        <a class="explore-card reveal" href="philosophy.html">
-          <span class="label">01</span>
-          <h3>Philosophy</h3>
-          <p>Why we're building this at all.</p>
+        <a class="explore-card reveal delay-1" href="philosophy.html">
+          <div>
+            <span class="label">Chapter 01</span>
+            <h3>Philosophy</h3>
+            <p>Why modern social platforms fail our emotional health, and why we build for the room rather than the audience.</p>
+          </div>
+          <span class="explore-card-arrow">Read Manifesto &rarr;</span>
         </a>
-        <a class="explore-card reveal" href="spaces.html">
-          <span class="label">02</span>
-          <h3>Two Spaces</h3>
-          <p>Not every conversation wants the same room.</p>
+        <a class="explore-card reveal delay-2" href="spaces.html">
+          <div>
+            <span class="label">Chapter 02</span>
+            <h3>Two Spaces</h3>
+            <p>The architectural duality: Group Space for intimate circles, and Public Venting Space for unburdening your mind.</p>
+          </div>
+          <span class="explore-card-arrow">Explore Rooms &rarr;</span>
         </a>
-        <a class="explore-card reveal" href="archive.html">
-          <span class="label">03</span>
-          <h3>The Archive</h3>
-          <p>A preview of what this space is for.</p>
+        <a class="explore-card reveal delay-3" href="archive.html">
+          <div>
+            <span class="label">Chapter 03</span>
+            <h3>The Archive</h3>
+            <p>Illustrative narratives of real human moments, grief, reckoning, and quiet joy that Koemere is built to hold.</p>
+          </div>
+          <span class="explore-card-arrow">Read Previews &rarr;</span>
         </a>
-        <a class="explore-card reveal" href="manual-wave.html">
-          <span class="label">04</span>
-          <h3>Manual Wave</h3>
-          <p>Our first approach with actual people.</p>
+        <a class="explore-card reveal delay-4" href="manual-wave.html">
+          <div>
+            <span class="label">Chapter 04</span>
+            <h3>Manual Wave</h3>
+            <p>Our private first cohort. Learn how the beta operates, what to expect, and apply for early founder-level access.</p>
+          </div>
+          <span class="explore-card-arrow">Apply For Spot &rarr;</span>
         </a>
       </div>
     </div>
@@ -166,11 +265,18 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Koemere.</span>
-      <span>Built slowly, on purpose.</span>
+      <div class="foot-meta-tag">
+        <span class="foot-meta-dot"></span>
+        <span>© 2026 Koemere. Built slowly, on purpose.</span>
+      </div>
+      <span>A sanctuary for honest human speech.</span>
     </div>
   </div>
 </footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top of page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
 <script src="assets/site.js" defer></script>
 </body>

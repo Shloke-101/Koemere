@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why we're building Koemere — software designed for the living room rather than the stage, honoring the dignity of honest human conversation.">
 <title>Philosophy — Koemere</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,440;0,9..144,500;1,9..144,440;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 385 294'%3E%3Cpath fill='%234E3A2E' d='M2825 3099 c-426 -54 -1070 -406 -1413 -774 -134 -144 -371 -474 -445 -620 -129 -257 -108 -519 54 -684 232 -236 757 -113 1115 262 79 81 181 214 172 222 -3 3 -40 -26 -84 -63 -331 -286 -674 -423 -850 -341 -90 43 -137 155 -115 277 10 57 66 202 78 202 2 0 30 -14 63 -30 371 -187 914 61 1054 481 46 136 45 321 -1 336 -6 2 -35 -31 -64 -74 -174 -259 -425 -414 -669 -412 -84 0 -169 22 -177 45 -19 59 339 399 597 566 925 601 1615 218 1465 -814 -89 -612 -420 -1114 -735 -1113 -97 1 -139 22 -217 112 -204 237 -375 302 -628 237 -77 -20 -179 -71 -334 -168 -226 -143 -307 -170 -506 -171 -215 0 -357 57 -506 205 -294 292 -238 781 130 1145 45 44 81 84 81 89 0 18 -95 -5 -149 -35 -161 -91 -334 -272 -438 -459 -214 -385 -142 -875 164 -1122 196 -158 384 -222 658 -222 208 0 381 41 520 123 309 184 369 211 470 211 86 0 134 -26 245 -133 162 -155 255 -198 446 -205 315 -11 548 146 807 543 469 721 552 1518 209 2022 -189 278 -568 416 -997 362z' transform='translate(-18,311) scale(0.1,-0.1)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -76,36 +78,69 @@
 </head>
 <body>
 
+<div class="scroll-progress-container">
+  <div class="scroll-progress-bar"></div>
+</div>
+
 <div class="grain"></div>
 
 <header>
   <div class="wrap nav-row">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Koemere homepage">
       <svg class="mark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-full" fill="currentColor"/></svg>
       <span class="brand-text">
         <span class="brand-name">koemere</span>
         <span class="brand-tag">home between voices</span>
       </span>
     </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="philosophy.html" class="active">Philosophy</a></li>
-        <li><a href="spaces.html">Two Spaces</a></li>
-        <li><a href="archive.html">The Archive</a></li>
-        <li><a href="manual-wave.html">Manual Wave</a></li>
-      </ul>
-    </nav>
+
+    <div class="nav-actions">
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="philosophy.html" class="active" aria-current="page">Philosophy</a></li>
+          <li><a href="spaces.html">Two Spaces</a></li>
+          <li><a href="archive.html">The Archive</a></li>
+          <li><a href="manual-wave.html">Manual Wave</a></li>
+        </ul>
+      </nav>
+
+      <a class="nav-cta" href="manual-wave.html">Join Wave 01 &rarr;</a>
+
+      <button class="mobile-nav-toggle" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="burger-box">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="philosophy.html" class="active">Philosophy</a></li>
+    <li><a href="spaces.html">Two Spaces</a></li>
+    <li><a href="archive.html">The Archive</a></li>
+    <li><a href="manual-wave.html">Manual Wave</a></li>
+  </ul>
+  <div class="mobile-drawer-footer">
+    <span>koemere — home between voices</span>
+    <span>shreejatamukherjeeuiux@gmail.com</span>
+  </div>
+</div>
 
 <main>
 
   <section class="page-intro">
     <svg class="page-intro-watermark" viewBox="0 0 385.170327 293.858106" aria-hidden="true"><use href="#mark-contour" fill="currentColor"/></svg>
     <div class="wrap">
-      <span class="label reveal in">Philosophy</span>
+      <span class="label reveal in">Chapter 01 &bull; Manifesto</span>
       <h1 class="reveal in">Why we're building this at all.</h1>
+      <p class="dek reveal in">The internet was supposed to bring us closer together. Instead, it built a stadium where everyone holds a microphone and nobody feels heard.</p>
     </div>
   </section>
 
@@ -116,8 +151,48 @@
         <blockquote>Some things are too tender for an audience.</blockquote>
       </div>
       <div class="phil-body reveal">
-        <p>Most of the internet was built to be watched. That changes what people are willing to say, and how honestly they say it.</p>
-        <p>Koemere starts from the opposite instinct. <strong>We build for the room, not the audience.</strong> The rest is still taking shape — but that standard isn't negotiable.</p>
+        <p>
+          Most communication software today was architected around a single unspoken premise: that bigger is better, faster is smarter, and more public is more valuable.
+        </p>
+        <p>
+          This single incentive gave us platforms optimized for outrage, virality, and performative posturing. It forced everyday conversations between friends to compete with professional creators and global headlines in the same relentless feed.
+        </p>
+
+        <h3>Building for the Room, Not the Stage</h3>
+        <p>
+          Koemere starts from the opposite instinct. <strong>We build for the room, not the audience.</strong> When you know who is in the room with you, your voice softens. You stop curating an image and begin sharing an experience.
+        </p>
+        <p>
+          In a small room, silence is comfortable. You don't need to post every day to maintain an algorithmic streak. You don't need to craft witty one-liners to earn social capital. You just speak when you have something real to say, and listen when others do.
+        </p>
+
+        <div class="manifesto-tenets">
+          <div class="tenet-box">
+            <span class="label">Pillar I</span>
+            <h4>The Dignity of Small Circles</h4>
+            <p>True trust scales down, not up. We cap conversation pods at 12 people to preserve genuine psychological safety and mutual accountability.</p>
+          </div>
+          <div class="tenet-box">
+            <span class="label">Pillar II</span>
+            <h4>Voice Carries Soul</h4>
+            <p>Text strips nuance and creates misunderstanding. Voice notes carry hesitation, warmth, sigh, and laughter — the actual texture of human thought.</p>
+          </div>
+          <div class="tenet-box">
+            <span class="label">Pillar III</span>
+            <h4>The Grace of Sunset</h4>
+            <p>Not every word needs to be etched into permanent digital stone. What you said on a hard Tuesday shouldn't define you five years later.</p>
+          </div>
+          <div class="tenet-box">
+            <span class="label">Pillar IV</span>
+            <h4>No Advertising Surpluses</h4>
+            <p>If the user is the product, manipulation is inevitable. We reject ad-driven business models in favor of sustainable, transparent human utility.</p>
+          </div>
+        </div>
+
+        <h3>Built Slowly, On Purpose</h3>
+        <p>
+          We aren't trying to capture the attention of a billion people. We are building a high-craft refuge for the people who are exhausted by noise and craving honest, unhurried connection.
+        </p>
       </div>
     </div>
   </section>
@@ -126,8 +201,8 @@
     <div class="wrap">
       <a href="spaces.html" class="reveal">
         <span>
-          <span class="np-label">Next</span><br>
-          <span class="np-title">Two Spaces</span>
+          <span class="np-label">Next Chapter</span><br>
+          <span class="np-title">Two Spaces &rarr;</span>
         </span>
         <span class="np-label">02 / 04</span>
       </a>
@@ -153,11 +228,18 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Koemere.</span>
+      <div class="foot-meta-tag">
+        <span class="foot-meta-dot"></span>
+        <span>© 2026 Koemere. All rights reserved.</span>
+      </div>
       <span>Built slowly, on purpose.</span>
     </div>
   </div>
 </footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top of page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
 <script src="assets/site.js" defer></script>
 </body>
